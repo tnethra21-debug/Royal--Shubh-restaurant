@@ -1,0 +1,6 @@
+{
+  "name": "Royal Shubh",
+  "description": "Royal Shubh: A premium fine-dining luxury Indian restaurant website featuring authentic flavors, elegant reservation portal, and sophisticated aesthetics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
