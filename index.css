@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-space: "Space Grotesk", sans-serif;
+
+  --color-gold-deep: #D4AF37;
+  --color-gold-champagne: #F7E7B4;
+  --color-black-pure: #0B0B0B;
+  --color-black-charcoal: #1A1A1A;
+  --color-ivory: #F8F5F0;
+  --color-beige: #A8A39D;
+}
+
+/* Custom scrollbar to keep it matching the majestic Obsidian & Gold theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 0px; /* Sharp edges for Sleek Interface */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F7E7B4;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0B0B0B;
+  color: #F8F5F0;
+}
+
+/* Luxury card shadow & highlights */
+.luxury-border-glow {
+  position: relative;
+}
+.luxury-border-glow::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(212, 175, 55, 0.15); /* Sleek Interface border specifications */
+  pointer-events: none;
+  transition: border-color 0.4s ease;
+}
+.luxury-border-glow:hover::after {
+  border-color: rgba(212, 175, 55, 0.45);
+}
+
+/* Glassmorphism class */
+.glass-panel {
+  background: rgba(26, 26, 26, 0.85);
+  backdrop-filter: blur(20px) saturate(120%);
+  -webkit-backdrop-filter: blur(20px) saturate(120%);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F7E7B4 0%, #D4AF37 50%, #A67C1E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #FBEFCD 0%, #D4AF37 50%, #A67C1E 100%);
+}
+
+/* Sharp box elements for Sleek Interface design layout */
+button, input, select, textarea, div {
+  border-radius: 0px !important; /* Sharp corners represent premium sleek luxury */
+}
+
+/* Keep fully rounded buttons/icons looking correct with custom wrapper exceptions */
+.rounded-full-important {
+  border-radius: 9999px !important;
+}
+
+/* Perfect Centering Styles as requested */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
